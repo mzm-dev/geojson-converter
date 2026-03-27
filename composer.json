@@ -1,0 +1,32 @@
+{
+    "name": "mzm/geojson-converter",
+    "description": "Tukar array Laravel ke format GeoJSON",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Mzm\\GeoJsonConverter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mzm\\GeoJsonConverter\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mzm\\GeoJsonConverter\\GeoJsonServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0|^11.0",
+        "orchestra/testbench": "^8.0|^9.0"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
